@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-
+import bgImage from "./assets/hari.jpg";
+import bgImage from "./kari.webp";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -186,7 +187,16 @@ const [sortOrder, setSortOrder] = useState("asc");
     <option value="asc">A - Z</option>
     <option value="desc">Z - A</option>
   </select>
+<div
+  style={{
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "500px",
+    width: "100%",
 
+  }}
+></div>
 </div>
 <div className="table-container">
       <table>
