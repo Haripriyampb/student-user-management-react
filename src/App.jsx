@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import bgImage from "./hari.jpg";
-import bgImage from "./kari.webp";
+import hariImage from "./hari.jpg";
+import kariImage from "./kari.webp";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -196,6 +196,7 @@ const [sortOrder, setSortOrder] = useState("asc");
     width: "100%",
 
   }}
+  
 ></div>
 </div>
 <div className="table-container">
