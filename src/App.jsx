@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import bgImage from "./assets/hari.jpg";
+import bgImage from "./hari.jpg";
 import bgImage from "./kari.webp";
 
 function App() {
