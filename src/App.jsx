@@ -62,7 +62,14 @@ const [sortOrder, setSortOrder] = useState("asc");
     }
   });
   return (
-    <div className="container">
+    <div className="container"
+      style ={{
+    backgroundImage: `url(${hariImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: "100vh",
+  }}
+  >
 
       <div className="header">
         <h2>Student User Management</h2>
@@ -82,6 +89,15 @@ const [sortOrder, setSortOrder] = useState("asc");
           }}
         >+ New User</button>
       </div>
+
+<img
+  src={kariImage}
+  alt="Student"
+  style={{
+    width: "350px",
+    borderRadius: "10px",
+  }}
+/>
 
       {showForm && (
         <div className="form-card">
