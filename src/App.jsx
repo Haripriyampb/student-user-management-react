@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import hariImage from "./hari.jpg";
-import kariImage from "./kari.webp";
+
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -62,15 +62,14 @@ const [sortOrder, setSortOrder] = useState("asc");
     }
   });
   return (
-    <div className="container"
-      style ={{
+    <div
+  className="container"
+  style={{
     backgroundImage: `url(${hariImage})`,
     backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: "100vh",
+    backgroundRepeat: "no-repeat",
   }}
-  >
-
+>
       <div className="header">
         <h2>Student User Management</h2>
 
@@ -90,14 +89,7 @@ const [sortOrder, setSortOrder] = useState("asc");
         >+ New User</button>
       </div>
 
-<img
-  src={kariImage}
-  alt="Student"
-  style={{
-    width: "350px",
-    borderRadius: "10px",
-  }}
-/>
+
 
       {showForm && (
         <div className="form-card">
@@ -203,17 +195,7 @@ const [sortOrder, setSortOrder] = useState("asc");
     <option value="asc">A - Z</option>
     <option value="desc">Z - A</option>
   </select>
-<div
-  style={{
-    backgroundImage: `url(${bgImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "500px",
-    width: "100%",
 
-  }}
-  
-></div>
 </div>
 <div className="table-container">
       <table>

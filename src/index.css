@@ -51,7 +51,7 @@ body {
 .form-card {
   width: 350px;
   background: rgba(255, 0, 170, 0.411);
-  background: url(../kari.webp);
+  background: url(kari.webp);
   padding: 20px;
   margin-bottom: 25px;
   border-radius: 12px;
